@@ -45,7 +45,7 @@ describe( "submitData()", () => {
     expect( headers[ 'accept' ][ 0 ] )
       .to.equal( 'application/json' )
     expect( Object.keys( reqBody ), "The request body should only have 'name' and 'email' key/value pairs" )
-      .to.deep.equal( [ "name", "email" ] )
+n      .to.deep.equal( [ "name", "email" ] )
     expect( reqBody.name, "The 'name' property was not found in the request body" )
       .to.eq( "Steve" )
     expect( reqBody.email, "The 'email' property was not found in the request body" )
